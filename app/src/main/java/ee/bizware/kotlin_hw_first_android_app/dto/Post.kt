@@ -4,6 +4,7 @@ class Post(
     val author: String,
     val content: String,
     val created: String,
+    val createdTimeStamp: Int,
     //
     var likedByMe: Boolean = false,
     var commentedByMe: Boolean = false,
