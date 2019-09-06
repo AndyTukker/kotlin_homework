@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val firstPost = Post("Братья Гамбс", "Этим полукреслом мастер Гамбс начинает новую партию мебели", "12 августа 1865", likedByMe = true, quantityOfLikes = 50, quantityOfShares = 3)
         createdTv.text = firstPost.created
+        authorTv.text = firstPost.author
         contentTv.text = firstPost.content
         //
         if (firstPost.quantityOfLikes == 0) {
